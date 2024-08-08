@@ -1,0 +1,22 @@
+name: Send Email
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  send_email:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send Email
+      uses: mattn/emails@v1
+      with:
+        from: 'kelvinnivek8@gmail.com'
+        to: 'kelvinnivek9@gmail.com'
+        subject: 'GitHub Action Email'
+        body: 'This is an automated email from GitHub Actions'
+      env:
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        SMTP_USERNAME: '7a1048001@smtp-brevo.com'
+        SMTP_HOST: 'smtp-relay.brevo.com'
