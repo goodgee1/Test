@@ -18,5 +18,5 @@ jobs:
         body: 'This is an automated email from GitHub Actions'
       env:
         SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-        SMTP_USERNAME: '7a1048001@smtp-brevo.com'
+        SMTP_USERNAME: '7a1331001@smtp-brevo.com'
         SMTP_HOST: 'smtp-relay.brevo.com'
